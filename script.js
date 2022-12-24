@@ -8,6 +8,7 @@ document.getElementById("dark-mode").addEventListener("click", function() {
         document.querySelector("button").classList.toggle("dark-mode");
         document.querySelector("ul").classList.toggle("dark-mode");
         document.querySelector(".fa.fa-grip-lines").classList.toggle("dark-mode");
+        document.querySelector("h1").classList.toggle("dark-mode");
         const listItems = document.querySelectorAll("li");
         console.log("Still in process")
         listItems.forEach(function(li) {

@@ -1,3 +1,5 @@
+@import url('');
+
 body {
     background-image: url("./photos/bg.png");
     background-repeat: no-repeat;
@@ -37,6 +39,22 @@ padding: 0;
 overflow: hidden;
 background-color: rgba(148, 148, 148, 0);
 opacity: 0.8;
+}
+
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 180px;
+    color: rgb(49, 49, 48);
+    text-shadow: 2px 2px 4px #000000;
+    position: fixed;
+}
+
+h1.dark-mode {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 180px;
+    color: rgb(156, 153, 153);
+    text-shadow: 2px 2px 4px #000000;
+    position: fixed;
 }
 
 button {
