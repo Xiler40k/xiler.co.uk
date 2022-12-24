@@ -4,6 +4,7 @@ var EventActive = true;
 function startup() {
 if  (localStorage.getItem("theme") == "light") {
 } else {
+    console.log("is working");
     document.body.classList.toggle("dark-mode");
     document.querySelector("button").classList.toggle("dark-mode");
     document.querySelector("ul").classList.toggle("dark-mode");
@@ -12,7 +13,7 @@ if  (localStorage.getItem("theme") == "light") {
     const listItems = document.querySelectorAll("li");
     listItems.forEach(function(li) {
         li.classList.toggle("dark-mode");
-        });
+    });
     }
 }
 
