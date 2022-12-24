@@ -44,8 +44,8 @@ opacity: 0.8;
 h1 {
     font-family: "Ubuntu", sans-serif;
     font-size: 180px;
-    color: rgb(49, 49, 48);
-    text-shadow: 2px 2px 4px #000000;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 4px #3d3d3d;
     position: fixed;
 }
 
@@ -53,7 +53,7 @@ h1.dark-mode {
     font-family: "Ubuntu", sans-serif;
     font-size: 180px;
     color: rgb(156, 153, 153);
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 3px #646363;
     position: fixed;
 }
 
