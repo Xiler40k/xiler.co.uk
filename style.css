@@ -113,7 +113,7 @@ border-radius: 10px;
 }
 
 .dropdown {
-position: relative;
+position: absolute;
 display: inline-block;
 padding: 10px 20px;
 margin-top: 0px;
