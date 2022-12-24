@@ -1,22 +1,29 @@
-function setCookie(mode, exdays) {
-    const d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-    document.cookie = "mode=" + mode + ";" + expires + ";path=/";
-  }
-
-
-
-document.getElementById("dark-mode").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    document.querySelector("button").classList.toggle("dark-mode");
-    document.querySelector("ul").classList.toggle("dark-mode");
-    const listItems = document.querySelectorAll("li");
-    listItems.forEach(function(li) {
-        li.classList.toggle("dark-mode");
-    });
-});
+var numberOfClicks = 0;
+var EventActive = true;
   
+document.getElementById("dark-mode").addEventListener("click", function() {
+    if (EventActive) {
+        numberOfClicks = numberOfClicks + 1;
+        document.body.classList.toggle("dark-mode");
+        document.querySelector("button").classList.toggle("dark-mode");
+        document.querySelector("ul").classList.toggle("dark-mode");
+        document.querySelector(".fa.fa-grip-lines").classList.toggle("dark-mode");
+        const listItems = document.querySelectorAll("li");
+        console.log("Still in process")
+        listItems.forEach(function(li) {
+            li.classList.toggle("dark-mode");
+        });
+        if (numberOfClicks === 50) {
+            EventActive = false;
+        }
+    } else {
+        document.body.classList.toggle("rainbow-mode");
+        console.log("Worked");
+    } 
+});
+
+
+
 function changeModeText() {
     var element = document.getElementById("mode-text");
     if (element.innerHTML.includes("Dark")) {

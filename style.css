@@ -1,11 +1,17 @@
 body {
-    background-image: url("./photos/bg.png");
+    background-image: url("./photos/3122432.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 body.dark-mode{
     background-image: url("./photos/bg-inverted.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.rainbow-mode{
+    background-image: url("./photos/bg-rainbow.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -137,3 +143,13 @@ margin-left: 100px;
 .padding-top {
 padding-top: 16px;
 }
+
+.fa-grip-lines.dark-mode {
+    color: white;
+}
+
+.fa-grip-lines {
+    color: black;
+}
+
+
