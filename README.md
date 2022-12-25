@@ -11,4 +11,4 @@ Will be published soon to the actual domain and will hopefully be updated regula
 - [ ] Spread out buttons on top of screen
 - [ ] Make download button + preview for projects page
 - [ ] Make links page better than just a clickable youtube logo lmfao
-- [ ] Make sure Rainbow easter egg doesn't ruin the text color
+- [x] ~Make sure Rainbow easter egg doesn't ruin the text color~
