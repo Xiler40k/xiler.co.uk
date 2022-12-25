@@ -17,8 +17,6 @@ if  (localStorage.getItem("theme") == "light") {
     }
 }
 
-
-
 document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
         numberOfClicks = numberOfClicks + 1;
@@ -43,11 +41,17 @@ document.getElementById("dark-mode").addEventListener("click", function() {
 
     } else {
         document.body.classList.toggle("rainbow-mode");
+        document.querySelector("button").classList.toggle("dark-mode");
+        document.querySelector("ul").classList.toggle("dark-mode");
+        document.querySelector(".fa.fa-grip-lines").classList.toggle("dark-mode");
+        document.querySelector("h1").classList.toggle("dark-mode");
+        const listItems = document.querySelectorAll("li");
+        listItems.forEach(function(li) {
+            li.classList.toggle("dark-mode");
+        });
         console.log("Worked");
     } 
 });
-
-
 
 function changeModeText() {
     var element = document.getElementById("mode-text");

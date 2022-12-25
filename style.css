@@ -55,6 +55,20 @@ h1.dark-mode {
     position: fixed;
 }
 
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    position: fixed;
+}
+
+h3.dark-mode {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(156, 153, 153);
+    position: fixed;
+}
+
 button {
     border: 0;
     outline: 0;
