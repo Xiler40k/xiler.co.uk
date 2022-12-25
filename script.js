@@ -1,19 +1,23 @@
 var numberOfClicks = 0;
 var EventActive = true;
-  
-function startup() {
-if  (localStorage.getItem("theme") == "light") {
-} else {
-    console.log("is working");
-    document.body.classList.toggle("dark-mode");
-    document.querySelector("button").classList.toggle("dark-mode");
-    document.querySelector("ul").classList.toggle("dark-mode");
-    document.querySelector(".fa.fa-grip-lines").classList.toggle("dark-mode");
-    document.querySelector("h1").classList.toggle("dark-mode");
-    const listItems = document.querySelectorAll("li");
-    listItems.forEach(function(li) {
-        li.classList.toggle("dark-mode");
+
+
+function toggleDarkMode() {
+    let items = new Array();
+    // Add names of the items you want to add the darkmode tag to here (e.g. if you wanted to add another one called "tag", then change it to ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li", "tag"])
+    let names = ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li"]
+    for(let i = 0; i < names.length; i++) {
+        items = [...items, ...document.querySelectorAll(names[i])]
+    }
+    items.forEach(function(item) {
+        item.classList.toggle("dark-mode");
     });
+}   
+
+
+function startup() {
+    if (localStorage.getItem("theme") != "light") {
+        toggleDarkMode();
     }
 }
 
@@ -22,15 +26,7 @@ if  (localStorage.getItem("theme") == "light") {
 document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
         numberOfClicks = numberOfClicks + 1;
-        document.body.classList.toggle("dark-mode");
-        document.querySelector("button").classList.toggle("dark-mode");
-        document.querySelector("ul").classList.toggle("dark-mode");
-        document.querySelector(".fa.fa-grip-lines").classList.toggle("dark-mode");
-        document.querySelector("h1").classList.toggle("dark-mode");
-        const listItems = document.querySelectorAll("li");
-        listItems.forEach(function(li) {
-            li.classList.toggle("dark-mode");
-        });
+        toggleDarkMode();
         if (numberOfClicks === 50) {
             EventActive = false;
         }
@@ -43,7 +39,6 @@ document.getElementById("dark-mode").addEventListener("click", function() {
 
     } else {
         document.body.classList.toggle("rainbow-mode");
-        console.log("Worked");
     } 
 });
 
