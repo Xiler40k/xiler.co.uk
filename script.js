@@ -1,19 +1,22 @@
 var numberOfClicks = 0;
 var EventActive = true;
-
+let mode = "light"
 
 function toggleDarkMode(rbm) {
+    if (mode == "light") { mode = "dark" } else { mode = "light" }
+    console.log(mode)
+
     let items = new Array();
     // Add names of the items you want to add the darkmode tag to here (e.g. if you wanted to add another one called "tag", then change it to ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li", "tag"])
     let names = ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li"]
     for(let i = 0; i < names.length; i++) {
-        if (rbm && names[i] == "body"){
-            continue;
-        }
         items = [...items, ...document.querySelectorAll(names[i])]
     }
     items.forEach(function(item) {
-        item.classList.toggle("dark-mode");
+        // item.classList.toggle("dark-mode");
+        if(rbm && item == document.body && mode == "light"){
+            item.classList.toggle("rainbow-mode")
+        }
     });
 }   
 
@@ -28,9 +31,9 @@ function startup() {
 
 document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
-        numberOfClicks = numberOfClicks + 1;
-        toggleDarkMode();
-        if (numberOfClicks === 50) {
+        numberOfClicks++
+        toggleDarkMode(false);
+        if (numberOfClicks >= 5) {
             EventActive = false;
         }
 
@@ -41,7 +44,7 @@ document.getElementById("dark-mode").addEventListener("click", function() {
         }
 
     } else {
-        document.body.classList.toggle("rainbow-mode");
+        toggleDarkMode(true);
     } 
 });
 
