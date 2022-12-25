@@ -4,7 +4,6 @@ let mode = "light"
 
 function toggleDarkMode() {
     if (mode == "light") { mode = "dark" } else { mode = "light" }
-    console.log(mode)
     let items = new Array();
     // Add names of the items you want to add the darkmode tag to here (e.g. if you wanted to add another one called "tag", then change it to ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li", "tag"])
     let names = ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li"]
