@@ -1,3 +1,7 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
 body {
     background-image: url("./photos/bg.png");
     background-repeat: no-repeat;
@@ -14,6 +18,13 @@ body.rainbow-mode{
     background-image: url("./photos/bg-rainbow.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* grid-gap: 1rem; */
+    margin-inline: auto;
 }
 
 .dark-mode {
@@ -126,9 +137,10 @@ border-radius: 10px;
 
 .dropdown {
 position: absolute;
-display: inline-block;
+display: block;
 padding: 10px 20px;
 margin-top: 0px;
+float: right;
 }
 
 .dropdown span {
