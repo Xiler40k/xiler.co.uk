@@ -23,8 +23,6 @@ function startup() {
     }
 }
 
-
-
 document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
         numberOfClicks = numberOfClicks + 1;
@@ -44,10 +42,9 @@ document.getElementById("dark-mode").addEventListener("click", function() {
             toggleDarkMode()
         }
         document.body.classList.toggle("rainbow-mode");
+
     } 
 });
-
-
 
 function changeModeText() {
     var element = document.getElementById("mode-text");
