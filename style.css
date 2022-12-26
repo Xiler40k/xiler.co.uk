@@ -72,12 +72,14 @@ button:hover {
 	border-radius:10px;
 }
 li {
-	float:left;
 	margin-right:30px;
 	opacity:1;
 }
 
 li a {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	display: inline-block;
 	text-align:center;
 	padding:14px 20px;
@@ -98,7 +100,6 @@ li a:hover {
 	display: block;
 	padding: 10px 20px;
 	margin-top: 0px;
-	float: right;
 }
 .dropdown span {
 	display: block;
@@ -108,6 +109,8 @@ li a:hover {
 	cursor: pointer;
 }
 .dropdown .dropdown-content {
+	position: relative;
+	left: -25%;
 	display: none;
 	background-color: rgb(196, 196, 196);
 	min-width: 160px;
@@ -139,5 +142,8 @@ li a:hover {
 	color:white;
 }
 .fa-grip-lines {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 	color:black;
 }
