@@ -109,8 +109,8 @@ li a:hover {
 	cursor: pointer;
 }
 .dropdown .dropdown-content {
-	position: relative;
-	left: -25%;
+	position: fixed;
+	left: 5.5%;
 	display: none;
 	background-color: rgb(196, 196, 196);
 	min-width: 160px;
