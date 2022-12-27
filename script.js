@@ -17,7 +17,9 @@ function toggleDarkMode() {
 
 
 function startup() {
-    if (localStorage.getItem("theme") != "light") {
+    if (localStorage.getItem("theme") == "dark") {
+        toggleDarkMode();
+    } else if (localStorage.getItem("theme") == null) {
         toggleDarkMode();
     }
 }
