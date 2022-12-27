@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<title>My Projects</title>
+</head>
+
+<body onload=startup()>
+    <ul>
+        <div class="grid-container">
+            <li>
+                <div>
+                    <div class="dropdown">
+                        <span> <i class="fa fa-grip-lines fa-lg"></i> </span>
+                        <div class="dropdown-content">
+                            <a href="./">Home</a>
+                            <a href="./links">Links</a>
+                            <a href="./projects">Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../links">Links</a></li>
+            <li><a href="../projects">Projects</a></li>
+            <li class="padding-top">
+                <button id="dark-mode" class = "button" onclick="changeModeText()">
+                <div id="mode-text"> Dark Mode <i class="fas fa-power-off"></i></div></button>
+            </li>
+        </div>
+    </ul>
+<h1> Projects </h1>
+<script src="../script.js"></script>
+</body>
+</html>
