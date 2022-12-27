@@ -26,7 +26,7 @@ document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
         numberOfClicks = numberOfClicks + 1;
         toggleDarkMode();
-        if (numberOfClicks >= 50) {
+        if (numberOfClicks >= 25) {
             EventActive = false;
         }
 
