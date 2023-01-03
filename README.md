@@ -13,3 +13,7 @@ Will be published soon to the actual domain and will hopefully be updated regula
 - [ ] Make download button + preview for projects page
 - [ ] Make links page better than just a clickable youtube logo lmfao
 - [x] ~Make sure Rainbow easter egg doesn't ruin the text color~
+
+**Short term goals:**
+
+- [ ] Custom 404 page
