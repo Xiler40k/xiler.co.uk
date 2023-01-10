@@ -13,6 +13,8 @@ Will be published soon to the actual domain and will hopefully be updated regula
 - [ ] Make download button + preview for projects page
 - [ ] Make links page better than just a clickable youtube logo lmfao
 - [x] ~Make sure Rainbow easter egg doesn't ruin the text color~
+- [ ] Link page is fixed on laptop, edit other pages in order to remove grid container (it's stupid for top bar)
+
 
 **Short term goals:**
 
