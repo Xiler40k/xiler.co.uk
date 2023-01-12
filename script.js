@@ -15,6 +15,13 @@ function toggleDarkMode() {
         item.classList.toggle("dark-mode");
     });
 
+    if (document.title.includes("Project")) {
+        project_btn()
+        console.log("Button change")
+    }
+}   
+
+function project_btn() {
     var element =document.getElementById("download-btn")
 
     if (localStorage.getItem("theme") == "light") {
@@ -23,8 +30,9 @@ function toggleDarkMode() {
     } else {
         element.innerHTML = ' <a href="../photos/babychickens.jpg" download="babychickens.jpg"> <button class="download"> <i class="fa fa-download"></i> Download </button></a> '
     }
-    
-}   
+}
+
+
 
 function startup() {
     if (localStorage.getItem("theme") == "dark") {
