@@ -34,12 +34,15 @@ ul {
 ul.dark-mode {
 	background-color:rgba(148,148,148,0);
 }
+
 h1 {
 	font-family:"Ubuntu",sans-serif;
-	font-size:180px;
+	font-size:140px;
 	color:rgb(0,0,0);
 	text-shadow:3px 3px 4px #3d3d3d;
-	position:fixed;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	position:relative;
 }
 h1.dark-mode {
 	color:rgb(156,153,153);
@@ -49,7 +52,7 @@ h3 {
 	font-family:"Ubuntu",sans-serif;
 	font-size:40px;
 	color:rgb(0,0,0);
-	position:fixed;
+	position:relative;
 }
 h3.dark-mode {
 	color:rgb(156,153,153);

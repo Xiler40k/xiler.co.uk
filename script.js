@@ -1,5 +1,6 @@
 var numberOfClicks = 0;
 var EventActive = true;
+var chickenAgressiveness = 0;
 let mode = "light"
 
 function toggleDarkMode() {
@@ -13,8 +14,17 @@ function toggleDarkMode() {
     items.forEach(function(item) {
         item.classList.toggle("dark-mode");
     });
-}   
 
+    var element =document.getElementById("download-btn")
+
+    if (localStorage.getItem("theme") == "light") {
+        element.innerHTML = ' <a href="../photos/babychickens.jpg" download="babychickens.jpg"> <button class="dark-mode"> <i class="fa fa-download"></i> Download </button></a> '
+        console.log("Sucess!")
+    } else {
+        element.innerHTML = ' <a href="../photos/babychickens.jpg" download="babychickens.jpg"> <button class="download"> <i class="fa fa-download"></i> Download </button></a> '
+    }
+    
+}   
 
 function startup() {
     if (localStorage.getItem("theme") == "dark") {
@@ -22,6 +32,25 @@ function startup() {
     } else if (localStorage.getItem("theme") == null) {
         toggleDarkMode();
     }
+
+    localStorage.setItem("chickAggressiveness", 0)
+
+    var element = document.getElementById("mode-text");
+    if (localStorage.getItem("theme") == "dark") {
+        element.innerHTML = ' Light Mode <i class="fas fa-power-off"></i></button> ';
+        } else {
+        element.innerHTML = ' Dark Mode <i class="fas fa-power-off"></i></button> ';
+        }
+    }
+
+
+function chicken_agressiveness() {
+    chickenAgressiveness = chickenAgressiveness + 1
+    localStorage.setItem("chickAggressiveness", chickenAgressiveness )
+}
+
+function goHome() {
+    window.location.replace("./")
 }
 
 document.getElementById("dark-mode").addEventListener("click", function() {
