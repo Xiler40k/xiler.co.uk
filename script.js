@@ -53,6 +53,15 @@ function goHome() {
     window.location.replace("./")
 }
 
+function chicken_agressiveness() {
+    chickenAgressiveness = chickenAgressiveness + 1
+    localStorage.setItem("chickAggressiveness", chickenAgressiveness )
+}
+
+function goHome() {
+    window.location.replace("./")
+}
+
 document.getElementById("dark-mode").addEventListener("click", function() {
     if (EventActive) {
         numberOfClicks = numberOfClicks + 1;
