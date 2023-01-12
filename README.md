@@ -18,4 +18,5 @@ Will be published soon to the actual domain and will hopefully be updated regula
 
 **Short term goals:**
 
-- [ ] Custom 404 page
+- [x] ~Custom 404 page~
+- [ ] Add text adevnture (maybe a bit longer)
