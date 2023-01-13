@@ -7,7 +7,7 @@ function toggleDarkMode() {
     if (mode == "light") { mode = "dark" } else { mode = "light" }
     let items = new Array();
     // Add names of the items you want to add the darkmode tag to here (e.g. if you wanted to add another one called "tag", then change it to ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li", "tag"])
-    let names = ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li"]
+    let names = ["body", "button", "ul", ".fa.fa-grip-lines", "h1", "li", ".download-btn"]
     for(let i = 0; i < names.length; i++) {
         items = [...items, ...document.querySelectorAll(names[i])]
     }
@@ -15,22 +15,8 @@ function toggleDarkMode() {
         item.classList.toggle("dark-mode");
     });
 
-    if (document.title.includes("Project")) {
-        project_btn()
-        console.log("Button change")
-    }
 }   
 
-function project_btn() {
-    var element =document.getElementById("download-btn")
-
-    if (localStorage.getItem("theme") == "light") {
-        element.innerHTML = ' <a href="../photos/babychickens.jpg" download="babychickens.jpg"> <button class="dark-mode"> <i class="fa fa-download"></i> Download </button></a> '
-        console.log("Sucess!")
-    } else {
-        element.innerHTML = ' <a href="../photos/babychickens.jpg" download="babychickens.jpg"> <button class="download"> <i class="fa fa-download"></i> Download </button></a> '
-    }
-}
 
 
 
