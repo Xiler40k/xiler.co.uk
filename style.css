@@ -2,151 +2,204 @@
 	font-family:"Ubuntu",sans-serif;
 }
 body {
-	background-image: url("./photos/bg.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-    background-color: #ebebeb;
+    background-image: url("./photos/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-body.dark-mode {
-	background-image:url("./photos/bg-inverted.png");
+body.dark-mode{
+    background-image: url("./photos/bg-inverted.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-body.rainbow-mode {
-	background-image:url("./photos/bg-rainbow.png");
+body.rainbow-mode{
+    background-image: url("./photos/bg-rainbow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.grid-container {
-	display:grid;
-	grid-template-columns:repeat(5,1fr);
-    margin-inline:auto;
-    position: relative;
+body.p404{
+    background-image:none;
+    background-color: white;
 }
 .dark-mode {
-	border:0;
-	outline:0;
+    border: 0;
+    outline: 0;
 }
 ul {
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	background-color:rgba(148,148,148,0);
-	opacity:0.8;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgba(148, 148, 148, 0);
+opacity: 0.8;
 }
 ul.dark-mode {
-	background-color:rgba(148,148,148,0);
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgba(148, 148, 148, 0);
+opacity: 0.8;
 }
-
 h1 {
-	font-family:"Ubuntu",sans-serif;
-	font-size:140px;
-	color:rgb(0,0,0);
-	text-shadow:3px 3px 4px #3d3d3d;
-	margin-top: 50px;
-	margin-bottom: 25px;
-	position:relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 130px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 4px #3d3d3d;
+    position: relative;
+    margin-top: 105px;
+    margin-bottom: 25px;
 }
 h1.dark-mode {
-	color:rgb(156,153,153);
-	text-shadow:2px 2px 3px #646363;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(213, 212, 212);
+    text-shadow: 2px 2px 3px #b5b4b4;
 }
+
 h3 {
-	font-family:"Ubuntu",sans-serif;
-	font-size:40px;
-	color:rgb(0,0,0);
-	position:relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    position: relative;
 }
+
 h3.dark-mode {
-	color:rgb(156,153,153);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(213, 213, 213);
+    position: relative;
+}
+.medium-text {
+    font-size: 30px;
+}
+.small-text {
+    font-size: 22px;
 }
 button {
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	border:0;
-	outline:0;
-	border-radius:10px;
-	background-color:rgb(196,196,196);
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
 }
 button.dark-mode {
-	background-color:rgb(85,85,85);
-	color:white;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+button.download {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(127, 224, 248);
+}
+button.dark-mode.download {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+button.dark-mode.download:hover {
+    background-color: rgb(139, 139, 139);
 }
 button:hover {
-	background-color:rgb(187,187,187);
-	border-radius:10px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
 }
-li {
-	margin-right:30px;
-	opacity:1;
+button.dark-mode:hover {
+    background-color: rgb(139, 139, 139);
+}
+button.download:hover {
+    background-color: rgb(41, 204, 245);
 }
 
+li {
+float: left;
+margin-right: 30px;
+opacity: 1;
+}
+li.dark-mode {
+float: left;
+margin-right: 30px;
+opacity: 1;
+}
 li a {
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	display: inline-block;
-	text-align:center;
-	padding:14px 20px;
-	text-decoration:none;
-	font-size:large;
-	color:black;
+display: block;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+font-size: large;
+color:black;
 }
 li.dark-mode a {
-	color:white;
+display: block;
+text-align: center;
+text-decoration: none;
+font-size: large;
+color: white;
+}
+li a:hover {
+background-color: rgb(196, 196, 196);
+border-radius: 10px;
 }
 
-li a:hover {
-	background-color:rgb(187,187,187);
-	border-radius:10px;
+li.dark-mode a:hover {
+background-color: rgb(125, 125, 125);
 }
+
 .dropdown {
-	position: relative;
-	display: block;
-	padding: 10px 20px;
-	margin-top: 0px;
+position: relative;
+display: inline-block;
+z-index: 9;
+padding: 10px 0px;
+margin-top: 0px;
 }
 .dropdown span {
-	display: block;
-	padding: 14px 20px;
-	text-decoration: none;
-	color: rgb(66, 66, 66);
-	cursor: pointer;
+display: block;
+padding: 14px 20px;
+text-decoration: none;
+color: rgb(66, 66, 66);
+cursor: pointer;
 }
 .dropdown .dropdown-content {
-	position: fixed;
-	left: 5.5%;
-	display: none;
-	background-color: rgb(196, 196, 196);
-	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(109, 109, 109, 0.2);
-	z-index: 10;	
-	border-radius: 10px;
-	float: right;
+display: none;
+position: fixed;
+background-color: rgb(196, 196, 196);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(109, 109, 109, 0.9);
+float: right;
+border-radius: 10px;
 }
 .dropdown .dropdown-content a {
-	color: rgb(66, 66, 66);
-	padding: 12px 20px;
-	text-decoration: none;
-	display: block;
+color: rgb(66, 66, 66);
+padding: 12px 20px;
+text-decoration: none;
+display: block;
 }
 .dropdown .dropdown-content a:hover {
-	background-color:rgb(167,167,167);
-	border-radius:10px;
+background-color: rgb(167, 167, 167);
+border-radius: 10px;
 }
 .dropdown:hover .dropdown-content {
-	display:block;
+  display: block;
 }
 .margin-left {
-	margin-left:100px;
+margin-left: 160px;
 }
 .padding-top {
-	padding-top:16px;
+padding-top: 16px;
 }
 .fa-grip-lines.dark-mode {
-	color:white;
+    color: white;
 }
 .fa-grip-lines {
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-	color:black;
+    color: black;
+}
+.float-right{
+    margin-left: 855px;
+}
+.margin-left-small{
+    margin-left: 40px;
 }
