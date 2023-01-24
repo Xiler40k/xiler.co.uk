@@ -1,6 +1,8 @@
 * {
-	font-family:"Ubuntu",sans-serif;
+    font-family:"ubuntu", sans-serif;
 }
+
+
 body {
     background-image: url("./photos/bg.png");
     background-repeat: no-repeat;
@@ -202,4 +204,7 @@ padding-top: 16px;
 }
 .margin-left-small{
     margin-left: 40px;
+}
+.padding-top-bigger{
+	padding-top: 150px;
 }
