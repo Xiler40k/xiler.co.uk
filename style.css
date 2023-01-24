@@ -314,9 +314,6 @@ a {
 .fancy:hover > .letter-d:nth-child(6) { transform: translate(6px, -25%) rotate(-9deg); }
 .fancy:hover > .letter-d:nth-child(7) { transform: translate(6px, 30%) rotate(8deg); }
 
-
-
-
 .fancy:hover > .letter-i {
     transition-duration: 800ms;
 }
