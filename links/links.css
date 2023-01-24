@@ -23,8 +23,8 @@ a {
 .line{
     display:flex;
     justify-content: space-between;
-    max-width: 500px;
-    width: 450px;
+    max-width: 25%;
+    width: 23.5%;
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
