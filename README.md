@@ -20,3 +20,4 @@ Will be published soon to the actual domain and will hopefully be updated regula
 
 - [x] ~Custom 404 page~
 - [ ] Add text adevnture (maybe a bit longer)
+- [ ] Make suvat calculator "project page" button not reidrect to /suvat/index.html and rather just /suvat/ as it looks nicer
