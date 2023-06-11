@@ -1,0 +1,338 @@
+* {
+    font-family:"ubuntu", sans-serif;
+}
+
+
+body {
+    background-image: url("./photos/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body.dark-mode{
+    background-image: url("./photos/bg-inverted.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.rainbow-mode{
+    background-image: url("./photos/bg-rainbow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body.p404{
+    background-image:none;
+    background-color: white;
+}
+.dark-mode {
+    border: 0;
+    outline: 0;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgba(148, 148, 148, 0);
+opacity: 0.8;
+}
+ul.dark-mode {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgba(148, 148, 148, 0);
+opacity: 0.8;
+}
+h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 130px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 4px #3d3d3d;
+    position: relative;
+    margin-top: 105px;
+    margin-bottom: 25px;
+}
+h1.dark-mode {
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(213, 212, 212);
+    text-shadow: 2px 2px 3px #b5b4b4;
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+h3.dark-mode {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 40px;
+    color: rgb(213, 213, 213);
+    position: relative;
+}
+.medium-text {
+    font-size: 30px;
+}
+.small-text {
+    font-size: 22px;
+}
+button {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(196, 196, 196);
+}
+button.dark-mode {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+button.download {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(127, 224, 248);
+}
+button.dark-mode.download {
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+button.dark-mode.download:hover {
+    background-color: rgb(139, 139, 139);
+}
+button:hover {
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
+}
+button.dark-mode:hover {
+    background-color: rgb(139, 139, 139);
+}
+button.download:hover {
+    background-color: rgb(41, 204, 245);
+}
+
+li {
+float: left;
+margin-right: 30px;
+opacity: 1;
+}
+li.dark-mode {
+float: left;
+margin-right: 30px;
+opacity: 1;
+}
+li a {
+display: block;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+font-size: large;
+color:black;
+}
+li.dark-mode a {
+display: block;
+text-align: center;
+text-decoration: none;
+font-size: large;
+color: white;
+}
+li a:hover {
+background-color: rgb(196, 196, 196);
+border-radius: 10px;
+}
+
+li.dark-mode a:hover {
+background-color: rgb(125, 125, 125);
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+z-index: 9;
+padding: 10px 0px;
+margin-top: 0px;
+}
+.dropdown span {
+display: block;
+padding: 14px 20px;
+text-decoration: none;
+color: rgb(66, 66, 66);
+cursor: pointer;
+}
+.dropdown .dropdown-content {
+display: none;
+position: fixed;
+background-color: rgb(196, 196, 196);
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(109, 109, 109, 0.9);
+float: right;
+border-radius: 10px;
+}
+.dropdown .dropdown-content a {
+color: rgb(66, 66, 66);
+padding: 12px 20px;
+text-decoration: none;
+display: block;
+}
+.dropdown .dropdown-content a:hover {
+background-color: rgb(167, 167, 167);
+border-radius: 10px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.margin-left {
+margin-left: 160px;
+}
+.padding-top {
+padding-top: 16px;
+}
+.fa-grip-lines.dark-mode {
+    color: white;
+}
+.fa-grip-lines {
+    color: black;
+}
+.float-right{
+    margin-left: 855px;
+}
+.margin-left-small{
+    margin-left: 40px;
+}
+.padding-top-bigger{
+	padding-top: 150px;
+}
+
+p {
+    color: black;
+    font-size: 3vw;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+p.dark-mode {
+    color: white;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+.padding-left{
+    padding-left: 20px;
+}
+
+.line{
+    display:flex;
+    justify-content: space-between;
+    width: 27.19198%;
+}
+
+#text:has(.fancy:hover) .word:not(.fancy:hover) {
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+
+.fancy > .letter-i {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy > .letter-x {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy > .letter-t {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy > .letter-y {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy > .letter-d {
+    display: inline-block;
+    transition: transform 350ms ease;
+}
+
+.fancy:hover > .letter-i:nth-child(1) { transform: translate(0%, 15%) rotate(5deg); }
+.fancy:hover > .letter-i:nth-child(2) { transform: translate(5px, -23%) rotate(-3deg); }
+.fancy:hover > .letter-i:nth-child(3) { transform: translate(5px, 35%) rotate(-8deg); }
+.fancy:hover > .letter-i:nth-child(4) { transform: translate(5px, -8%) rotate(9deg); }
+.fancy:hover > .letter-i:nth-child(5) { transform: translate(8px, -40%) rotate(-4.5deg); }
+.fancy:hover > .letter-i:nth-child(6) { transform: translate(10px, -15%) rotate(-3deg); }
+.fancy:hover > .letter-i:nth-child(7) { transform: translate(11px, 17%) rotate(6deg); }
+.fancy:hover > .letter-i:nth-child(8) { transform: translate(10px, -30%) rotate(-10deg); }
+.fancy:hover > .letter-i:nth-child(9) { transform: translate(10px, 3%) rotate(-3deg); }
+.fancy:hover > .letter-i:nth-child(10) { transform: translate(12px, 40%) rotate(5deg); }
+.fancy:hover > .letter-i:nth-child(11) { transform: translate(10px, -30%) rotate(-7deg); }
+.fancy:hover > .letter-i:nth-child(12) { transform: translate(10px, 32%) rotate(-3deg); }
+.fancy:hover > .letter-i:nth-child(13) { transform: translate(10px, -20%) rotate(-3deg); }
+.fancy:hover > .letter-i:nth-child(14) { transform: translate(10px, -50%) rotate(-8deg); }
+.fancy:hover > .letter-i:nth-child(15) { transform: translate(15px, -10%) rotate(7deg); }
+.fancy:hover > .letter-i:nth-child(16) { transform: translate(20px, 10%) rotate(-3deg); }
+
+.fancy:hover > .letter-x:nth-child(1) { transform: translate(-15%, 5%) rotate(5deg); }
+.fancy:hover > .letter-x:nth-child(2) { transform: translate(17%, -20%) rotate(-4.5deg); }
+.fancy:hover > .letter-x:nth-child(3) { transform: translate(10%, 30%) rotate(6deg); }
+.fancy:hover > .letter-x:nth-child(4) { transform: translate(5%, -15%) rotate(-7deg); }
+.fancy:hover > .letter-x:nth-child(5) { transform: translate(5%, 5%) rotate(10deg); }
+
+.fancy:hover > .letter-t:nth-child(1) { transform: translate(-5%, 25%) rotate(-10deg); }
+.fancy:hover > .letter-t:nth-child(2) { transform: translate(3%, -15%) rotate(3deg); }
+.fancy:hover > .letter-t:nth-child(3) { transform: translate(4px, 13%) rotate(-6deg); }
+.fancy:hover > .letter-t:nth-child(4) { transform: translate(4px, -24%) rotate(12deg); }
+.fancy:hover > .letter-t:nth-child(5) { transform: translate(2px, 10%) rotate(-16deg); }
+.fancy:hover > .letter-t:nth-child(6) { transform: translate(6px, -25%) rotate(3deg); }
+
+.fancy:hover > .letter-y:nth-child(1) { transform: translate(-5%, 25%) rotate(-10deg); }
+.fancy:hover > .letter-y:nth-child(2) { transform: translate(3%, -15%) rotate(3deg); }
+.fancy:hover > .letter-y:nth-child(3) { transform: translate(4px, 13%) rotate(-6deg); }
+.fancy:hover > .letter-y:nth-child(4) { transform: translate(4px, -24%) rotate(12deg); }
+.fancy:hover > .letter-y:nth-child(5) { transform: translate(6px, 10%) rotate(-16deg); }
+.fancy:hover > .letter-y:nth-child(6) { transform: translate(6px, -25%) rotate(-9deg); }
+.fancy:hover > .letter-y:nth-child(7) { transform: translate(6px, 30%) rotate(3deg); }
+.fancy:hover > .letter-y:nth-child(8) { transform: translate(7px, -20%) rotate(3deg); }
+
+.fancy:hover > .letter-d:nth-child(1) { transform: translate(-5%, -25%) rotate(-10deg); }
+.fancy:hover > .letter-d:nth-child(2) { transform: translate(3%, -10%) rotate(3deg); }
+.fancy:hover > .letter-d:nth-child(3) { transform: translate(4px, 13%) rotate(-6deg); }
+.fancy:hover > .letter-d:nth-child(4) { transform: translate(4px, -24%) rotate(12deg); }
+.fancy:hover > .letter-d:nth-child(5) { transform: translate(6px, 20%) rotate(-16deg); }
+.fancy:hover > .letter-d:nth-child(6) { transform: translate(6px, -25%) rotate(-9deg); }
+.fancy:hover > .letter-d:nth-child(7) { transform: translate(6px, 30%) rotate(8deg); }
+
+
+
+
+.fancy:hover > .letter-i {
+    transition-duration: 800ms;
+}
+
+.fancy > .letter-x {
+    transition-duration: 800ms;
+}
+
+.fancy > .letter-t {
+    transition-duration: 800ms;
+}
+
+.fancy > .letter-y {
+    transition-duration: 800ms;
+}
+
+.fancy > .letter-d {
+    transition-duration: 800ms;
+}
